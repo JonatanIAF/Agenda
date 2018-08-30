@@ -1,0 +1,54 @@
+<ion-header>
+	<ion-navbar color="principal">
+		<ion-title>
+			Editar
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+	<ion-list>
+ 
+		<ion-item>
+			<ion-label stacked>Nombre</ion-label>
+			<ion-input type="text" name="name" [(ngModel)]="model.name"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked>Apellido Paterno</ion-label>
+			<ion-input type="text" name="apellidoP" [(ngModel)]="model.apellidoP"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked>Apellido Materno</ion-label>
+			<ion-input type="text" name="apellidoM" [(ngModel)]="model.apellidoM"></ion-input>
+		</ion-item>
+ 
+		<ion-item>
+			<ion-label stacked>Direccion</ion-label>
+			<ion-input type="text" name="direccion" [(ngModel)]="model.direccion"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked>Telefono</ion-label>
+			<ion-input type="tel" name="phone" [(ngModel)]="model.phone"></ion-input>
+		</ion-item>
+ 
+		<ion-item>
+			<ion-label stacked>Nacimento</ion-label>
+			<ion-datetime displayFormat="DD/MM/YYYY" name="birth" [(ngModel)]="model.birth"></ion-datetime>
+		</ion-item>
+ 
+		<ion-item>
+			<ion-label>Activo</ion-label>
+			<ion-checkbox name="active" [(ngModel)]="model.active"></ion-checkbox>
+		</ion-item>
+
+		
+ 
+	</ion-list>
+ 
+	<button ion-button block (click)="save()">Guardar</button>
+ 
+</ion-content>
